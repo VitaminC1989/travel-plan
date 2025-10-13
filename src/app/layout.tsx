@@ -30,7 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-Hans" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} bg-background text-foreground antialiased`}>
+      <body
+        suppressHydrationWarning
+        className={`${geistSans.variable} ${geistMono.variable} bg-background text-foreground antialiased`}
+      >
         <ThemeProvider>
           <div className="flex min-h-screen flex-col">
             <SiteHeader />
